@@ -139,8 +139,26 @@ function divide(num1: number, num2: number): number {
 function printResult(num: number): void {
   console.log("Division result : ", num);
 }
-printResult(divide(15, 3));
+printResult(divide(21, 3));
 
+/* Function types define the parameters and return type of a function.
+   Callback functions can return something even if the argument takes void type.
+*/
 
-// Function types define the parameters and return type of a function.
-// Callback functions can return something even if the argument takes void type.
+// Arrow Functions
+
+// default argument(b)
+// can't set default argument for a //ERROR :Expected 2 arguments, but got 1
+const addition = (a: number, b: number = 10) => a + b;
+const printOut: (a: number | string) => void = (output) =>
+  console.log("add a + b :", output);
+printOut(addition(4));
+
+// Rest Parameter
+const multiply = (...numbers: number[]) => {
+  return numbers.reduce((curResult, curValue) => {
+    return curResult * curValue;
+  }, 1);
+};
+const multipledNums = multiply(10, 2, 4, 5);
+console.log("multiply all numbers", multipledNums);
