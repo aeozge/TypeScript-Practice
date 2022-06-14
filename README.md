@@ -18,4 +18,7 @@ Open index.html to view it in your browser.
 Run `tsc --init` to create `tsconfig.json`.
 Then run all types of files in the project with `tsc` or `tsc -w`.
 
+### Compile and run localhost
+In a separate terminal window, run `npm start` to load the current app onto localhost.
+Then run `tsc -w` to monitor `.ts` files for changes and auto-compile.
 
