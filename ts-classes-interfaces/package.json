@@ -1,0 +1,16 @@
+{
+  "name": "ts-classes-interfaces",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "author": "Ozge",
+  "license": "ISC"
+}
